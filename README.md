@@ -21,7 +21,7 @@ This service is in essence a RESTful glue, between a [loraserver.io](https://www
 
 Node-Red was chosen in order to speedup the development time while focusing solely on the logic of the device-service. The choice brought serious optimisation issues since node-red is considerably heavy (in regards with a simple python flask script that could implement the same functionality). Moreover, the flow-based programming has a learning curve which is not as easy as one would think, making particular difficult the implementatin of multiple rule based flows that would otherwise incur a couple of `if` statements. On the bright side, it is easily implemented and immensely scalable since node.js has amazing scalability properties.
 
-The device service was created to be used in a container on a [balena.io](https://balena.io] Raspberry pi 3, it is a PoC and needs serious optimisation in regards to resource consumption.
+The device service was created to be used in a container on a [balena.io](https://balena.io) Raspberry pi 3, it is a PoC and needs serious optimisation in regards to resource consumption, as also improvement in regards to functionality and error handling. **This repository inclused both the Dockerfile needed to build the service as also the docker-compose of the whole project.**
 
 Finally, it implements a subset of the EdgeX foundry device service [specification](https://docs.google.com/document/d/1aMIQ0kb46VE5eeCpDlaTg8PP29-DBSBTlgeWrv6LuYk/edit) and the flow complexity was kept to the minimum.
 
